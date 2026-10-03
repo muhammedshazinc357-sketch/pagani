@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Pagani Huayra BC — Macchina Volante. A cinematic automotive experience.">
+  <title>Pagani / Huayra BC — Macchina Volante</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="loader-brand">PAGANI</div>
+      <div class="loader-model">HUAYRA BC</div>
+      <div class="loader-line"><span id="loaderBar"></span></div>
+      <div class="loader-progress"><span>LOADING</span><strong id="loaderPercent">0%</strong></div>
+    </div>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <a class="brand" href="#top" aria-label="Pagani Huayra BC home">
+      <span class="monogram">P</span>
+      <span>PAGANI / HUAYRA BC</span>
+    </a>
+    <nav class="desktop-nav">
+      <a href="#story">STORY</a>
+      <a href="#design">DESIGN</a>
+      <a href="#engineering">ENGINEERING</a>
+      <a href="#specs">SPECS</a>
+      <a href="#inquire">INQUIRE</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#story">STORY</a>
+    <a href="#design">DESIGN</a>
+    <a href="#engineering">ENGINEERING</a>
+    <a href="#specs">SPECS</a>
+    <a href="#inquire">INQUIRE</a>
+  </div>
+
+  <main id="top">
+    <section class="hero-scroll" id="experience">
+      <div class="hero-sticky">
+        <canvas id="heroCanvas" aria-label="Cinematic Pagani Huayra BC animation"></canvas>
+        <div class="hero-fallback" id="heroFallback">
+          <div class="fallback-label">240-FRAME CINEMATIC SEQUENCE</div>
+          <div class="fallback-title">HUAYRA BC</div>
+          <div class="fallback-copy">Add frames 1.jpg through 240.jpg to<br>images/huayra-sequence/ to activate the experience.</div>
+        </div>
+        <div class="hero-vignette"></div>
+        <div class="hero-hud" id="heroHud">
+          <div class="hud-phase" id="hudPhase">01 / ORIGIN</div>
+          <div class="hud-title" id="hudTitle">HUAYRA BC</div>
+          <div class="hud-subtitle" id="hudSubtitle">MACCHINA VOLANTE</div>
+          <div class="hud-tag" id="hudTag">THE FLYING MACHINE</div>
+          <div class="hud-meta" id="hudMeta">20 UNITS PRODUCED WORLDWIDE &nbsp; / &nbsp; €2,600,000</div>
+        </div>
+        <div class="scroll-cue"><span>SCROLL TO EXPERIENCE</span><i></i></div>
+        <div class="frame-readout"><span>FRAME</span> <b id="frameNumber">001</b> <em>/ 240</em></div>
+      </div>
+    </section>
+
+    <section class="editorial-section story section-grid" id="story">
+      <div class="eyebrow">01 / ORIGIN</div>
+      <div class="section-main">
+        <p class="section-kicker">HUAYRA BC / MODENA / ITALY / 2017</p>
+        <h1>BORN FROM<br><span>WIND.</span></h1>
+        <div class="story-copy">
+          <p>Huayra BC is a study in movement, proportion and hand-built precision. Every surface is shaped around the air, every detail considered as part of a singular mechanical object.</p>
+          <div class="stat-row"><strong>20</strong><span>UNITS<br>PRODUCED</span></div>
+        </div>
+      </div>
+      <div class="vertical-note">MACCHINA VOLANTE — AN AUTOMOTIVE SCULPTURE IN MOTION</div>
+    </section>
+
+    <section class="editorial-section design section-grid" id="design">
+      <div class="eyebrow">02 / FORM</div>
+      <div class="section-main">
+        <p class="section-kicker">CARBON SCULPTURE / AERODYNAMIC MASTERY</p>
+        <h2>FORM FOLLOWS<br><span>PERFORMANCE.</span></h2>
+        <div class="feature-lines">
+          <div><b>CARBOTANIUM™</b><span>Advanced composite architecture</span></div>
+          <div><b>ACTIVE AERODYNAMICS</b><span>Surfaces shaped for controlled airflow</span></div>
+          <div><b>CARBON FIBER</b><span>Strength, lightness and visual depth</span></div>
+          <div><b>TITANIUM</b><span>Mechanical detail without compromise</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="editorial-section engineering" id="engineering">
+      <div class="engineering-top">
+        <div class="eyebrow">03 / POWER</div>
+        <div class="section-kicker">ENGINEERED WITHOUT COMPROMISE.</div>
+      </div>
+      <div class="engine-number">V12</div>
+      <div class="engine-data">
+        <div><span>ENGINE</span><b>V12 BITURBO AMG</b></div>
+        <div><span>DISPLACEMENT</span><b>6.0 LITRES</b></div>
+        <div><span>POWER</span><b>745 HP</b></div>
+        <div><span>TORQUE</span><b>1,000 NM</b></div>
+      </div>
+    </section>
+
+    <section class="specs-section" id="specs">
+      <div class="section-grid">
+        <div class="eyebrow">04 / SPECIFICATIONS</div>
+        <div class="section-main">
+          <h2>NUMBERS<br><span>WITH PURPOSE.</span></h2>
+          <div class="spec-grid" id="specGrid"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="editorial-section craftsmanship">
+      <div class="craft-image" aria-hidden="true"></div>
+      <div class="craft-copy">
+        <div class="eyebrow">05 / CRAFTSMANSHIP</div>
+        <h2>THE HUMAN<br><span>HAND.</span></h2>
+        <p>HAND ASSEMBLED / MODENA, ITALY</p>
+        <p>20 CARS / BESPOKE INTERIOR</p>
+      </div>
+    </section>
+
+    <section class="features-section" id="features">
+      <div class="section-grid">
+        <div class="eyebrow">06 / FEATURES</div>
+        <div class="feature-list">
+          <article><span>01</span><h3>CARBOTANIUM BODY</h3><p>Composite engineering translated into a sculptural exterior.</p></article>
+          <article><span>02</span><h3>ACTIVE AERODYNAMICS</h3><p>Air becomes part of the vehicle's visual and mechanical language.</p></article>
+          <article><span>03</span><h3>BESPOKE RED INTERIOR</h3><p>Hand-finished materials and visible carbon create an intimate cockpit.</p></article>
+          <article><span>04</span><h3>TRACK DNA</h3><p>A road-going machine developed around control, response and theatre.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta" id="inquire">
+      <div class="cta-line"></div>
+      <div class="eyebrow">07 / CONTACT</div>
+      <h2>THE ART OF<br><span>PERFORMANCE.</span></h2>
+      <p>HUAYRA BC</p>
+      <div class="cta-actions">
+        <a href="mailto:info@example.com">INQUIRE ABOUT THE HUAYRA BC <span>↗</span></a>
+        <a href="#top">EXPLORE PAGANI <span>↑</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">PAGANI</div>
+    <div class="footer-grid">
+      <div>AUTOMOBILI S.P.A.<br>MODENA, ITALY</div>
+      <div><a href="#story">STORY</a><a href="#design">DESIGN</a><a href="#engineering">ENGINEERING</a></div>
+      <div><a href="#specs">SPECS</a><a href="#inquire">CONTACT</a><span>© 2026</span></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
